@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LABG.XV | Genius Phone Repair</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="logo.png" alt="LabgXV Logo" class="logo">
+      <h1>LABG.XV</h1>
+    </div>
+    <p class="subtitle">Genius Phone Repair & Electronics | Wakiso, Kayunga Daily Market Room 28</p>
+    <nav>
+      <button onclick="showSection('accessories')">Accessories</button>
+      <button onclick="showSection('repairs')">Repairs</button>
+      <button onclick="showSection('loans')">Phones on Loan</button>
+      <button onclick="showSection('movies')">Movies</button>
+      <button onclick="showSection('contact')">Contact</button>
+    </nav>
+  </header>
+  <main>
+    <!-- Accessories Section -->
+    <section id="accessories" class="section">
+      <h2>Earphones & Accessories</h2>
+      <div class="product-gallery">
+        <div class="product-card">
+          <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=350&q=80" alt="Luxury Earphones">
+            <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=350&q=80" alt="Earphones in Case">
+          </div>
+          <h3>Earphones</h3>
+          <p>Quality sound, tangle-free, fits all devices.</p>
+          <div class="price">5,000 UGX</div>
+          <a class="whatsapp" href="https://wa.me/256700720186?text=I%20want%20to%20order%20Earphones%20(5,000%20UGX)" target="_blank">
+            Order via WhatsApp
+          </a>
+        </div>
+        <div class="product-card">
+          <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=350&q=80" alt="Samsung Cover">
+            <img src="https://images.unsplash.com/photo-1512499617640-c2f999098c1e?auto=format&fit=crop&w=350&q=80" alt="Colorful Covers">
+          </div>
+          <h3>Phone Covers</h3>
+          <p>For all models: Samsung, Tecno, Itel, iPhone, etc.</p>
+          <div class="price">10,000 UGX</div>
+          <a class="whatsapp" href="https://wa.me/256700720186?text=I%20want%20to%20order%20a%20phone%20cover%20(10,000%20UGX)" target="_blank">
+            Order via WhatsApp
+          </a>
+        </div>
+        <div class="product-card">
+          <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=350&q=80" alt="USB Cable">
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=350&q=80" alt="Cable Types">
+          </div>
+          <h3>Charging Cables</h3>
+          <p>Fast charge, all phone types & lengths.</p>
+          <div class="price">8,000 UGX</div>
+          <a class="whatsapp" href="https://wa.me/256700720186?text=I%20want%20to%20order%20a%20charging%20cable%20(8,000%20UGX)" target="_blank">
+            Order via WhatsApp
+          </a>
+        </div>
+      </div>
+      <p class="more">We have a variety of accessories: memory cards, screen protectors, Bluetooth speakers & more!</p>
+    </section>
+
+    <!-- Repairs Section -->
+    <section id="repairs" class="section" style="display:none">
+      <h2>Phone Repair Orders</h2>
+      <p>We repair all mobile brands: Samsung, Tecno, Itel, iPhone, and more. Fill the form below or <a class="whatsapp" href="https://wa.me/256700720186?text=I%20want%20to%20book%20a%20repair" target="_blank">chat on WhatsApp</a> for a quick quote.</p>
+      <form id="repairForm">
+        <input type="text" name="customerName" placeholder="Your Name" required>
+        <input type="text" name="phoneModel" placeholder="Phone Model (e.g. Samsung A05)" required>
+        <textarea name="issue" placeholder="Describe the issue..." required></textarea>
+        <button type="submit">Send Repair Order</button>
+      </form>
+      <div id="repairStatus"></div>
+    </section>
+
+    <!-- Phones on Loan Section -->
+    <section id="loans" class="section" style="display:none">
+      <h2>Phones on Loan</h2>
+      <div class="phone-gallery">
+        <div class="phone-card">
+          <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=350&q=80" alt="Samsung A05">
+            <img src="https://images.unsplash.com/photo-1510557880182-3eec1c6aefc8?auto=format&fit=crop&w=350&q=80" alt="Samsung Back">
+          </div>
+          <h3>Samsung A05</h3>
+          <ul>
+            <li>128GB Storage, 6GB RAM</li>
+            <li class="price">130,000 UGX</li>
+          </ul>
+          <a class="whatsapp" href="https://wa.me/256700720186?text=I%20want%20to%20get%20the%20Samsung%20A05%20on%20loan%20(130,000%20UGX)" target="_blank">
+            Request on WhatsApp
+          </a>
+        </div>
+        <div class="phone-card">
+          <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=350&q=80" alt="Samsung A06">
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=350&q=80" alt="Phone in Hand">
+          </div>
+          <h3>Samsung A06</h3>
+          <ul>
+            <li>128GB Storage, 6GB RAM</li>
+            <li class="price">140,000 UGX</li>
+          </ul>
+          <a class="whatsapp" href="https://wa.me/256700720186?text=I%20want%20to%20get%20the%20Samsung%20A06%20on%20loan%20(140,000%20UGX)" target="_blank">
+            Request on WhatsApp
+          </a>
+        </div>
+        <div class="phone-card">
+          <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1512499617640-c2f999098c1e?auto=format&fit=crop&w=350&q=80" alt="Samsung A16">
+            <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=350&q=80" alt="Phone Closeup">
+          </div>
+          <h3>Samsung A16</h3>
+          <ul>
+            <li>128GB Storage, 8GB RAM</li>
+            <li class="price">230,000 UGX</li>
+          </ul>
+          <a class="whatsapp" href="https://wa.me/256700720186?text=I%20want%20to%20get%20the%20Samsung%20A16%20on%20loan%20(230,000%20UGX)" target="_blank">
+            Request on WhatsApp
+          </a>
+        </div>
+        <div class="phone-card">
+          <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=350&q=80" alt="Tecno Pop 10C">
+            <img src="https://images.unsplash.com/photo-1512499617640-c2f999098c1e?auto=format&fit=crop&w=350&q=80" alt="Tecno Pop">
+          </div>
+          <h3>Tecno Pop 10C</h3>
+          <ul>
+            <li>128GB Storage, 4GB RAM</li>
+            <li class="price">90,000 UGX</li>
+          </ul>
+          <a class="whatsapp" href="https://wa.me/256700720186?text=I%20want%20to%20get%20the%20Tecno%20Pop%2010C%20on%20loan%20(90,000%20UGX)" target="_blank">
+            Request on WhatsApp
+          </a>
+        </div>
+        <div class="phone-card">
+          <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=350&q=80" alt="Tecno Spark 40">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=350&q=80" alt="Spark 40">
+          </div>
+          <h3>Tecno Spark 40</h3>
+          <ul>
+            <li>128GB Storage, 6GB RAM</li>
+            <li class="price">190,000 UGX</li>
+          </ul>
+          <a class="whatsapp" href="https://wa.me/256700720186?text=I%20want%20to%20get%20the%20Tecno%20Spark%2040%20on%20loan%20(190,000%20UGX)" target="_blank">
+            Request on WhatsApp
+          </a>
+        </div>
+        <div class="phone-card">
+          <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=350&q=80" alt="Tecno Smart">
+            <img src="https://images.unsplash.com/photo-1510557880182-3eec1c6aefc8?auto=format&fit=crop&w=350&q=80" alt="Smart">
+          </div>
+          <h3>Tecno Smart</h3>
+          <ul>
+            <li>64GB Storage, 4GB RAM</li>
+            <li class="price">110,000 UGX</li>
+          </ul>
+          <a class="whatsapp" href="https://wa.me/256700720186?text=I%20want%20to%20get%20the%20Tecno%20Smart%20on%20loan%20(110,000%20UGX)" target="_blank">
+            Request on WhatsApp
+          </a>
+        </div>
+      </div>
+      <p>All phones available for loan. <b>Contact us</b> to arrange payment plans and pickup!</p>
+    </section>
+
+    <!-- Movies Section -->
+    <section id="movies" class="section" style="display:none">
+      <h2>Movies & VJs</h2>
+      <p>All genres and your favorite VJs:</p>
+      <ul>
+        <li>VJ Jingo</li>
+        <li>VJ Junior</li>
+        <li>VJ Emmy</li>
+        <li>VJ Uliyo</li>
+      </ul>
+      <p>Get latest action, comedy, drama, romance and more! <a class="whatsapp" href="https://wa.me/256700720186?text=I%20want%20to%20order%20movies" target="_blank">Order movies on WhatsApp</a></p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" style="display:none">
+      <h2>Contact LABG.XV</h2>
+      <ul class="contact-info">
+        <li>📍 <b>Location:</b> Wakiso, Kayunga Daily Market Room No:28</li>
+        <li>📞 <b>Phone:</b> <a href="tel:+256700720186">+256 700 720186</a></li>
+        <li>💬 <b>WhatsApp:</b> <a href="https://wa.me/256700720186" target="_blank">Chat with us</a></li>
+        <li>📧 <b>Email:</b> <a href="mailto:xavibwoizy@gmail.com">xavibwoizy@gmail.com</a></li>
+      </ul>
+      <p>We respond fast. Visit us or reach out for any order or inquiry!</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 LABG.XV - Genius Phone Repair | Wakiso, Kayunga Daily Market | <a href="mailto:xavibwoizy@gmail.com">xavibwoizy@gmail.com</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
